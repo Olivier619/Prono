@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PronoExpert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PronoExpert</h1>
+        <p>Prédictions sportives en temps réel</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active" data-tab="aujourdhui">Aujourd'hui</a></li>
+            <li><a href="#" data-tab="demain">Demain</a></li>
+            <li><a href="#" data-tab="apres-demain">Après-demain</a></li>
+            <li><a href="#" data-tab="derniers-matchs">Derniers matchs</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="search-container">
+            <input type="search" id="searchInput" placeholder="Rechercher une équipe...">
+            <button id="searchButton">Rechercher</button>
+        </div>
+
+        <div id="loading-indicator">
+            <div class="spinner"></div>
+            <p>Chargement des matchs en cours...</p>
+        </div>
+
+        <div id="match-results">
+            <!-- Match results will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 PronoExpert - Prédictions sportives basées sur l'intelligence artificielle</p>
+    </footer>
+
+    <div class="manus-badge">
+        <img src="https://cdn.jsdelivr.net/npm/@phosphor-icons/core@2.0.3/assets/fill/pencil-simple-fill.svg" alt="Edit icon" width="18" height="18">
+        Made with Manus
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
